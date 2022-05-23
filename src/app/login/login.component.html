@@ -1,0 +1,61 @@
+<!-- <div class="container">
+    <div class="card" style="text-align: center; margin-top: 150px;">
+        <div class="card-body">
+            <h1>Usuarios</h1>
+            <input type="text" placeholder=".,...." [(ngModel)]="art.usuario">
+            <h1>Contraseña</h1>
+            <input type="password" placeholder="****">
+
+        </div>
+    </div>
+</div> -->
+<div class="card">
+    <div class="field">
+      <span class="header">Login</span>
+      <div class="form-group">
+        <input type="text"  [(ngModel)]="Usere.usuario" required="required" />
+        <label for="input" class="control-label">Usuario</label><i class="bar"></i>
+      </div>
+      <div class="form-group">
+        <input type="password" [(ngModel)]="Usere.password" required="required" />
+        <label for="input" class="control-label">Contraseña</label><i class="bar"></i>
+      </div>
+      <div class="button-container">
+        <button type="button" class="button" (click)="userLogin()"><span>Iniciar Sesion</span></button>
+      </div>
+    </div>
+    <div>
+        
+    </div>
+
+
+    <div class="fab" id="fab" >
+      <i class="zmdi zmdi-account-add"  (click)="addClass()"></i>
+      <div class="field">
+        <span class="header">Register</span>
+        <div class="form-group">
+          <input type="text"  [(ngModel)]="Usere.usuario"  required="required" />
+          <label for="input" class="control-label">Usuario</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" id="nombre" [(ngModel)]="Usere.nombre"  required="required" />
+          <label for="input" class="control-label">Nombre</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+            <input type="text" [(ngModel)]="Usere.apellidos" required="required" />
+            <label for="input" class="control-label"  >Apellidos</label><i class="bar"></i>
+          </div>
+        <div class="form-group">
+          <input type="password" [(ngModel)]="Usere.password" required="required" />
+          <label for="input" class="control-label" ngDefaultControl>Contraseña</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="password" required="required" />
+          <label for="input" class="control-label">Confirmar Contraseña</label><i class="bar"></i>
+        </div>
+        <div class="button-container">
+          <button type="button" class="button" (click)="saveUser()"><span>Guardar</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
